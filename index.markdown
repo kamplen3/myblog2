@@ -5,7 +5,7 @@
 layout: home
 ---
 
-# 🐧 Portada Interactiva — Pingüino Giratorio
+# 🐧 Portadtorio
 
 Bienvenido a la **portada web interactiva con un pingüino animado**.  
 Este proyecto HTML/CSS/JS muestra una pequeña escena donde un pingüino gira suavemente mientras flota, con controles para ajustar su animación en tiempo real.
