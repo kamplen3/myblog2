@@ -33,8 +33,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Vuelve pronto.
   Adios.
   :)
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/myblog2" # the subpath of your site, e.g. /blog
+url: "https://kamplen3.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: elonmusk
 github_username:  kamplen3
 
