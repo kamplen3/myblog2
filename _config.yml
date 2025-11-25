@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   el fascinante mundo de los coches y las carreras.
   Mantente al día con nuestras publicaciones regulares y sumérgete en
 baseurl: "/myblog2" # the subpath of your site, e.g. /blog
-url: "https://kamplen3.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kamplen3.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kamplen3
 github_username:  kamplen3
 
