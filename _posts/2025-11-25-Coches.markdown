@@ -21,7 +21,7 @@ Los pilotos invitados destacaron:
 
 El sonido del motor bóxer a más de 9.000 rpm se convirtió en uno de los momentos más disfrutados por el público.
 
-![Ferrari F40](/assets/img/porsche-911-gt3-rs.png)
+![Ferrari F40](https://raw.githubusercontent.com/kamplen3/myblog2/gh-pages/assets/img/porsche-911-gt3-rs.png)
 
 ---
 
@@ -37,7 +37,7 @@ Las demostraciones del Performante sorprendieron por:
 
 Aunque no fue el más rápido en tiempos, sí fue el que más impacto visual generó.
 
-![Lamborghini Aventador](/assets/img/Lamborghini-aventador.png)
+![Lamborghini Aventador](https://raw.githubusercontent.com/kamplen3/myblog2/gh-pages/assets/img/Lamborghini-aventador.png)
 
 ---
 
@@ -53,7 +53,7 @@ Los aficionados disfrutaron de:
 
 El F40 no compitió por tiempos, pero su vuelta de demostración fue el punto más emotivo del evento.
 
-![Ferrari F40](https://raw.githubusercontent.com/kamplen3/myblog2/blob/gh-pages/assets/img/Ferrari-F40.png)
+![Ferrari F40](https://raw.githubusercontent.com/kamplen3/myblog2/gh-pages/assets/img/Ferrari-F40.png)
 
 ---
 
