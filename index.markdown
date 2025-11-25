@@ -5,7 +5,7 @@
 layout: home
 ---
 
-#  Pasión por el Automovilismo
+Pasión por el Automovilismo
 
 ![Portada de Rally](/assets/img/2024-subaru-wrx-rally-car.jpg)
 
