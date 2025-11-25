@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Formula 1: Victoria aplastante en el Gran Premio de Silverstone 2025: un dominio absoluto desde la pole"
+date:   2025-11-11 10:01:22 +0100
+categories: jekyll update
+---
+
+**Silverstone, 6 de julio de 2025** — En un día de condiciones variables y gran intensidad, el piloto británico Lando Norris logró una victoria muy celebrada en el Gran Premio de Gran Bretaña, tras una gran actuación en su carrera de casa. Finalizó por delante de su compañero de equipo, Oscar Piastri, y del veterano Nico Hülkenberg, quien logró por fin su primer podio en la Fórmula 1.
+
+---
+
+## 🏎️ Carrera dominada por el ritmo y la gestión de la tormenta
+
+El piloto de McLaren F1 Team impuso un ritmo impresionante desde el inicio. Aunque Piastri lideró gran parte de la prueba, el triunfo se le escapó por una penalización que cambió el curso del resultado. Norris asumió el mando y supo mantenerlo pese a los desafíos del circuito mojado y los constantes periodos de coche de seguridad.
+
+---
+
+## 🔧 Penalización clave y podio histórico
+
+Oscar Piastri había liderado la prueba antes de recibir una penalización de **10 segundos** por frenar de manera irregular tras la salida del coche de seguridad, lo que permitió a Norris ascender al primer puesto.
+Mientras tanto, Hülkenberg remontó desde la 19ª posición en parrilla para subir al tercer escalón del podio, logrando así su primera vez entre los tres mejores en 239 GP’s.
+
+---
+
+
+## 📊 Clasificación Final
+
+**Fecha:** 6 de julio de 2025 — Silverstone Circuit
+
+| Pos | Piloto | Equipo | Diferencia |
+|-----|--------|--------|------------|
+| 1º | Lando Norris | McLaren-Mercedes | 1:37:15.735 |
+| 2º | Oscar Piastri | McLaren-Mercedes | + 6.812 s |
+| 3º | Nico Hülkenberg | Kick Sauber-Ferrari | + 34.742 s |
+| 4º | Lewis Hamilton | Ferrari | + 39.812 s |
+| 5º | Max Verstappen | Red Bull-RBPT | + 56.781 s |
+
+---
+
+## 🌦️ El clima vuelve a jugar su papel
+
+La carrera estuvo marcada por lluvia intermitente, paradas bajo condiciones cambiantes y varios periodos con coche de seguridad, factores que pusieron a prueba la estrategia y reflejaron la gran capacidad de Norris para adaptarse.
+
+---

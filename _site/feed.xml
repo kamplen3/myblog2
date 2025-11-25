@@ -1,478 +1,190 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://10.0.22.224:4000/myblog2/feed.xml" rel="self" type="application/atom+xml" /><link href="http://10.0.22.224:4000/myblog2/" rel="alternate" type="text/html" /><updated>2025-11-25T11:30:02+01:00</updated><id>http://10.0.22.224:4000/myblog2/feed.xml</id><title type="html">Noticias del automovilismo</title><subtitle>Blog sobre noticias del mundo del automovilismo. Aquí encontrarás las últimas novedades, análisis y opiniones sobre el fascinante mundo de los coches y las carreras. Mantente al día con nuestras publicaciones regulares y sumérgete en</subtitle><entry><title type="html"></title><link href="http://10.0.22.224:4000/myblog2/2025/11/25/2025-11-11-Post1.html" rel="alternate" type="text/html" title="" /><published>2025-11-25T11:30:02+01:00</published><updated>2025-11-25T11:30:02+01:00</updated><id>http://10.0.22.224:4000/myblog2/2025/11/25/2025-11-11-Post1</id><content type="html" xml:base="http://10.0.22.224:4000/myblog2/2025/11/25/2025-11-11-Post1.html"><![CDATA[<p>&lt;!doctype html&gt;</p>
-<html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portada — Pingüino giratorio</title>
-  <style>
-    :root{
-      --bg:#0f1724;
-      --card:#071029;
-      --accent:#6ee7b7;
-      --muted:#9aa7b2;
-    }
-    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
-    body{background:linear-gradient(180deg,var(--bg),#031122);color:white;display:grid;place-items:center;padding:2rem}
-
-    .container{max-width:1100px;width:100%;display:grid;grid-template-columns:1fr 380px;gap:32px;align-items:center}
-    @media (max-width:900px){.container{grid-template-columns:1fr;}}
-
-    .hero{background:linear-gradient(145deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:32px;border-radius:20px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
-    .title{font-size:clamp(28px,4.5vw,48px);margin:0 0 8px}
-    .subtitle{color:var(--muted);margin:0 0 24px}
-
-    .stage{height:420px;display:flex;align-items:center;justify-content:center;position:relative}
-    @media (max-width:900px){.stage{height:320px}}
-
-    /* Card that holds the penguin */
-    .orbit{width:320px;height:320px;border-radius:50%;display:grid;place-items:center;position:relative}
-    .ring{position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(255,255,255,0.03)}
-
-    /* Penguin size and animation anchor */
-    .penguin-wrap{width:120px;height:120px;display:grid;place-items:center;transform-origin:center center}
-    .penguin{width:100%;height:100%;will-change:transform}
-
-    /* Simple subtle floating effect while spinning */
-    .floating{animation:floatY 3s ease-in-out infinite}
-    @keyframes floatY{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
-
-    /* controls */
-    .panel{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.5)}
-    .panel h3{margin:0 0 12px;font-size:18px}
-    .row{display:flex;gap:12px;align-items:center;margin-bottom:12px}
-    .btn{background:transparent;border:1px solid rgba(255,255,255,0.08);padding:10px 12px;border-radius:10px;color:white;cursor:pointer}
-    .btn.primary{background:var(--accent);color:#01221a;border:0}
-    .label{font-size:13px;color:var(--muted)}
-    input[type=range]{width:100%}
-    .small{font-size:12px;color:var(--muted)}
-
-    footer.note{margin-top:14px;color:var(--muted);font-size:13px}
-
-    /* focus states */
-    .btn:focus, input:focus{outline:3px solid rgba(110,231,183,0.12)}
-  </style>
-</head>
-<body>
-  <main class="container">
-    <section class="hero" aria-labelledby="hero-title">
-      <h1 id="hero-title" class="title">Bienvenido — Portada interactiva</h1>
-      <p class="subtitle">Un pingüino animado como protagonista. Prueba a controlar la velocidad, dirección y el modo de giro.</p>
-
-      <div class="stage" role="region" aria-label="Escenario del pingüino">
-        <div class="orbit" id="orbit" aria-hidden="false">
-          <div class="ring"></div>
-          <!-- Penguin wrapper will be rotated by JS -->
-          <div class="penguin-wrap" id="pengWrap" title="Pingüino giratorio">
-            <div class="floating">
-                <svg class="penguin" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración de un pingüino">
-            <!-- Inline SVG penguin -->
-            <svg class="penguin" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración de un pingüino">
-              <defs>
-                <radialGradient id="g1" cx="50%" cy="40%">
-                  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15" />
-                  <stop offset="100%" stop-color="#000" stop-opacity="0" />
-                </radialGradient>
-              </defs>
-              <!-- body -->
-              <ellipse cx="100" cy="110" rx="58" ry="74" fill="#081223" stroke="#081423" />
-              <!-- belly -->
-              <ellipse cx="100" cy="120" rx="36" ry="50" fill="#fff" />
-              <!-- head -->
-              <circle cx="100" cy="62" r="34" fill="#081223" />
-              <ellipse cx="100" cy="74" rx="26" ry="22" fill="#fff" />
-              <!-- beak -->
-              <path d="M100 80 l14 8 l-14 6 l-14 -6 z" fill="#ffb347" />
-              <!-- eyes -->
-              <circle cx="92" cy="72" r="4" fill="#081223" />
-              <circle cx="108" cy="72" r="4" fill="#081223" />
-              <!-- wings -->
-              <path d="M40 110 q18 -10 22 10 q-10 14 -24 16 z" fill="#07101a" />
-              <path d="M160 110 q-18 -10 -22 10 q10 14 24 16 z" fill="#07101a" />
-              <!-- feet -->
-              <path d="M86 166 q6 8 14 0" fill="#ffad4d" />
-              <path d="M114 166 q-6 8 -14 0" fill="#ffad4d" />
-              <!-- gloss -->
-              <ellipse cx="78" cy="98" rx="6" ry="10" fill="url(#g1)" opacity="0.6" />
-            </svg>
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-
-      <p class="small">Tip: haz clic en el pingüino para pausar/reanudar.</p>
-
-    &lt;/section&gt;
-
-    <aside class="panel" aria-label="Controles de animación">
-      <h3>Controles</h3>
-      <div class="row">
-        <button id="playBtn" class="btn primary">Pausar</button>
-        <button id="dirBtn" class="btn">Dirección: sentido horario</button>
-      </div>
-
-      <div style="margin-bottom:8px">
-        <div class="label">Velocidad: <span id="speedValue">1.00</span>x</div>
-        <input id="speed" type="range" min="0" max="3" step="0.01" value="1" />
-      </div>
-
-      <div class="row">
-        <label class="label"><input id="hoverSpin" type="checkbox" checked="" /> Girar con hover</label>
-      </div>
-
-      <div class="row">
-        <button id="randomBtn" class="btn">Aleatorizar velocidad</button>
-        <button id="resetBtn" class="btn">Reset</button>
-      </div>
-
-      <div class="row" style="margin-top:6px">
-        <div class="label">Estado: <strong id="stateLabel">Reproduciendo</strong></div>
-      </div>
-
-      <footer class="note">Diseño accesible — compatible con teclado. Toca / clic para interactuar.</footer>
-    </aside>
-  &lt;/main&gt;
-
-  <script>
-    // Controls and animation using requestAnimationFrame for smoothness
-    const pengWrap = document.getElementById('pengWrap');
-    const playBtn = document.getElementById('playBtn');
-    const dirBtn = document.getElementById('dirBtn');
-    const speedInput = document.getElementById('speed');
-    const speedValue = document.getElementById('speedValue');
-    const hoverSpin = document.getElementById('hoverSpin');
-    const randomBtn = document.getElementById('randomBtn');
-    const resetBtn = document.getElementById('resetBtn');
-    const stateLabel = document.getElementById('stateLabel');
-
-    let running = true;
-    let angle = 0; // degrees
-    let lastTime = null;
-    let direction = 1; // 1 clockwise, -1 counter
-    let speed = 1; // multiplier (1 = base 60deg/s)
-    const baseDegPerSec = 90; // base rotation speed
-
-    function updateSpeedUI(){ speedValue.textContent = parseFloat(speed).toFixed(2); }
-    updateSpeedUI();
-
-    function loop(ts){
-      if(!lastTime) lastTime = ts;
-      const dt = (ts - lastTime)/1000; // seconds
-      lastTime = ts;
-      if(running){
-        angle += direction * baseDegPerSec * speed * dt;
-        angle = angle % 360;
-        pengWrap.style.transform = `rotate(${angle}deg)`;
-      }
-      requestAnimationFrame(loop);
-    }
-
-    requestAnimationFrame(loop);
-
-    // Controls events
-    playBtn.addEventListener('click', ()=>{
-      running = !running;
-      playBtn.textContent = running ? 'Pausar' : 'Reanudar';
-      stateLabel.textContent = running ? 'Reproduciendo' : 'En pausa';
-    });
-
-    dirBtn.addEventListener('click', ()=>{
-      direction *= -1;
-      dirBtn.textContent = direction === 1 ? 'Dirección: sentido horario' : 'Dirección: antihorario';
-    });
-
-    speedInput.addEventListener('input', (e)=>{
-      speed = Number(e.target.value);
-      updateSpeedUI();
-    });
-
-    // Click penguin to toggle play/pause
-    pengWrap.addEventListener('click', ()=>{
-      running = !running;
-      playBtn.textContent = running ? 'Pausar' : 'Reanudar';
-      stateLabel.textContent = running ? 'Reproduciendo' : 'En pausa';
-    });
-
-    // Hover behavior
-    const orbit = document.getElementById('orbit');
-    orbit.addEventListener('mouseenter', ()=>{
-      if(hoverSpin.checked) running = true;
-    });
-    orbit.addEventListener('mouseleave', ()=>{
-      if(hoverSpin.checked) running = false;
-    });
-
-    randomBtn.addEventListener('click', ()=>{
-      const r = (Math.random()*2.5).toFixed(2);
-      speed = Number(r);
-      speedInput.value = r;
-      updateSpeedUI();
-    });
-
-    resetBtn.addEventListener('click', ()=>{
-      running = true; direction = 1; speed = 1; angle = 0; speedInput.value = 1;
-      playBtn.textContent = 'Pausar'; dirBtn.textContent = 'Dirección: sentido horario'; stateLabel.textContent = 'Reproduciendo'; pengWrap.style.transform = 'rotate(0deg)'; updateSpeedUI();
-    });
-
-    // keyboard accessibility
-    document.addEventListener('keydown', (e)=>{
-      if(e.key === ' ' || e.key === 'Spacebar'){
-        e.preventDefault();
-        running = !running; playBtn.textContent = running ? 'Pausar' : 'Reanudar'; stateLabel.textContent = running ? 'Reproduciendo' : 'En pausa';
-      }
-      if(e.key === 'ArrowUp'){ speed = Math.min(3, speed + 0.1); speedInput.value = speed.toFixed(2); updateSpeedUI(); }
-      if(e.key === 'ArrowDown'){ speed = Math.max(0, speed - 0.1); speedInput.value = speed.toFixed(2); updateSpeedUI(); }
-      if(e.key === 'd'){ direction *= -1; dirBtn.textContent = direction === 1 ? 'Dirección: sentido horario' : 'Dirección: antihorario'; }
-    });
-
-    // remember lastTime reset when switching running state to prevent jump
-    const origPlay = playBtn.onclick;
-    // nothing else needed here (managed above)
-
-  </script>
-&lt;/body&gt;
-&lt;/html&gt;
-</svg></div></div></div></div></section></main></body></html>]]></content><author><name></name></author></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/11/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2025-11-11T10:01:22+01:00</published><updated>2025-11-11T10:01:22+01:00</updated><id>http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/11/welcome-to-jekyll</id><content type="html" xml:base="http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/11/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>Jekyll requires blog post files to be named according to the following format:</p>
-
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
-
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Post1</title><link href="http://10.0.22.224:4000/myblog2/2025/11/11/Post1.html" rel="alternate" type="text/html" title="Post1" /><published>2025-11-11T00:00:00+01:00</published><updated>2025-11-11T00:00:00+01:00</updated><id>http://10.0.22.224:4000/myblog2/2025/11/11/Post1</id><content type="html" xml:base="http://10.0.22.224:4000/myblog2/2025/11/11/Post1.html"><![CDATA[<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portada — Pingüino giratorio</title>
-  <style>
-    :root{
-      --bg:#0f1724;
-      --card:#071029;
-      --accent:#6ee7b7;
-      --muted:#9aa7b2;
-    }
-    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
-    body{background:linear-gradient(180deg,var(--bg),#031122);color:white;display:grid;place-items:center;padding:2rem}
-
-    .container{max-width:1100px;width:100%;display:grid;grid-template-columns:1fr 380px;gap:32px;align-items:center}
-    @media (max-width:900px){.container{grid-template-columns:1fr;}}
-
-    .hero{background:linear-gradient(145deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:32px;border-radius:20px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
-    .title{font-size:clamp(28px,4.5vw,48px);margin:0 0 8px}
-    .subtitle{color:var(--muted);margin:0 0 24px}
-
-    .stage{height:420px;display:flex;align-items:center;justify-content:center;position:relative}
-    @media (max-width:900px){.stage{height:320px}}
-
-    /* Card that holds the penguin */
-    .orbit{width:320px;height:320px;border-radius:50%;display:grid;place-items:center;position:relative}
-    .ring{position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(255,255,255,0.03)}
-
-    /* Penguin size and animation anchor */
-    .penguin-wrap{width:120px;height:120px;display:grid;place-items:center;transform-origin:center center}
-    .penguin{width:100%;height:100%;will-change:transform}
-
-    /* Simple subtle floating effect while spinning */
-    .floating{animation:floatY 3s ease-in-out infinite}
-    @keyframes floatY{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
-
-    /* controls */
-    .panel{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.5)}
-    .panel h3{margin:0 0 12px;font-size:18px}
-    .row{display:flex;gap:12px;align-items:center;margin-bottom:12px}
-    .btn{background:transparent;border:1px solid rgba(255,255,255,0.08);padding:10px 12px;border-radius:10px;color:white;cursor:pointer}
-    .btn.primary{background:var(--accent);color:#01221a;border:0}
-    .label{font-size:13px;color:var(--muted)}
-    input[type=range]{width:100%}
-    .small{font-size:12px;color:var(--muted)}
-
-    footer.note{margin-top:14px;color:var(--muted);font-size:13px}
-
-    /* focus states */
-    .btn:focus, input:focus{outline:3px solid rgba(110,231,183,0.12)}
-  </style>
-</head>
-<body>
-  <main class="container">
-    <section class="hero" aria-labelledby="hero-title">
-      <h1 id="hero-title" class="title">Bienvenido — Portada interactiva</h1>
-      <p class="subtitle">Un pingüino animado como protagonista. Prueba a controlar la velocidad, dirección y el modo de giro.</p>
-
-      <div class="stage" role="region" aria-label="Escenario del pingüino">
-        <div class="orbit" id="orbit" aria-hidden="false">
-          <div class="ring"></div>
-          <!-- Penguin wrapper will be rotated by JS -->
-          <div class="penguin-wrap floating" id="pengWrap" title="Pingüino giratorio">
-            <!-- Inline SVG penguin -->
-            <svg class="penguin" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración de un pingüino">
-              <defs>
-                <radialGradient id="g1" cx="50%" cy="40%">
-                  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
-                  <stop offset="100%" stop-color="#000" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-              <!-- body -->
-              <ellipse cx="100" cy="110" rx="58" ry="74" fill="#081223" stroke="#081423" />
-              <!-- belly -->
-              <ellipse cx="100" cy="120" rx="36" ry="50" fill="#fff" />
-              <!-- head -->
-              <circle cx="100" cy="62" r="34" fill="#081223" />
-              <ellipse cx="100" cy="74" rx="26" ry="22" fill="#fff" />
-              <!-- beak -->
-              <path d="M100 80 l14 8 l-14 6 l-14 -6 z" fill="#ffb347" />
-              <!-- eyes -->
-              <circle cx="92" cy="72" r="4" fill="#081223" />
-              <circle cx="108" cy="72" r="4" fill="#081223" />
-              <!-- wings -->
-              <path d="M40 110 q18 -10 22 10 q-10 14 -24 16 z" fill="#07101a" />
-              <path d="M160 110 q-18 -10 -22 10 q10 14 24 16 z" fill="#07101a" />
-              <!-- feet -->
-              <path d="M86 166 q6 8 14 0" fill="#ffad4d" />
-              <path d="M114 166 q-6 8 -14 0" fill="#ffad4d" />
-              <!-- gloss -->
-              <ellipse cx="78" cy="98" rx="6" ry="10" fill="url(#g1)" opacity="0.6" />
-            </svg>
-          </div>
-        </div>
-      </div>
-
-      <p class="small">Tip: haz clic en el pingüino para pausar/reanudar.</p>
-
-    </section>
-
-    <aside class="panel" aria-label="Controles de animación">
-      <h3>Controles</h3>
-      <div class="row">
-        <button id="playBtn" class="btn primary">Pausar</button>
-        <button id="dirBtn" class="btn">Dirección: sentido horario</button>
-      </div>
-
-      <div style="margin-bottom:8px">
-        <div class="label">Velocidad: <span id="speedValue">1.00</span>x</div>
-        <input id="speed" type="range" min="0" max="3" step="0.01" value="1">
-      </div>
-
-      <div class="row">
-        <label class="label"><input id="hoverSpin" type="checkbox" checked> Girar con hover</label>
-      </div>
-
-      <div class="row">
-        <button id="randomBtn" class="btn">Aleatorizar velocidad</button>
-        <button id="resetBtn" class="btn">Reset</button>
-      </div>
-
-      <div class="row" style="margin-top:6px">
-        <div class="label">Estado: <strong id="stateLabel">Reproduciendo</strong></div>
-      </div>
-
-      <footer class="note">Diseño accesible — compatible con teclado. Toca / clic para interactuar.</footer>
-    </aside>
-  </main>
-
-  <script>
-    // Controls and animation using requestAnimationFrame for smoothness
-    const pengWrap = document.getElementById('pengWrap');
-    const playBtn = document.getElementById('playBtn');
-    const dirBtn = document.getElementById('dirBtn');
-    const speedInput = document.getElementById('speed');
-    const speedValue = document.getElementById('speedValue');
-    const hoverSpin = document.getElementById('hoverSpin');
-    const randomBtn = document.getElementById('randomBtn');
-    const resetBtn = document.getElementById('resetBtn');
-    const stateLabel = document.getElementById('stateLabel');
-
-    let running = true;
-    let angle = 0; // degrees
-    let lastTime = null;
-    let direction = 1; // 1 clockwise, -1 counter
-    let speed = 1; // multiplier (1 = base 60deg/s)
-    const baseDegPerSec = 90; // base rotation speed
-
-    function updateSpeedUI(){ speedValue.textContent = parseFloat(speed).toFixed(2); }
-    updateSpeedUI();
-
-    function loop(ts){
-      if(!lastTime) lastTime = ts;
-      const dt = (ts - lastTime)/1000; // seconds
-      lastTime = ts;
-      if(running){
-        angle += direction * baseDegPerSec * speed * dt;
-        angle = angle % 360;
-        pengWrap.style.transform = `rotate(${angle}deg)`;
-      }
-      requestAnimationFrame(loop);
-    }
-
-    requestAnimationFrame(loop);
-
-    // Controls events
-    playBtn.addEventListener('click', ()=>{
-      running = !running;
-      playBtn.textContent = running ? 'Pausar' : 'Reanudar';
-      stateLabel.textContent = running ? 'Reproduciendo' : 'En pausa';
-    });
-
-    dirBtn.addEventListener('click', ()=>{
-      direction *= -1;
-      dirBtn.textContent = direction === 1 ? 'Dirección: sentido horario' : 'Dirección: antihorario';
-    });
-
-    speedInput.addEventListener('input', (e)=>{
-      speed = Number(e.target.value);
-      updateSpeedUI();
-    });
-
-    // Click penguin to toggle play/pause
-    pengWrap.addEventListener('click', ()=>{
-      running = !running;
-      playBtn.textContent = running ? 'Pausar' : 'Reanudar';
-      stateLabel.textContent = running ? 'Reproduciendo' : 'En pausa';
-    });
-
-    // Hover behavior
-    const orbit = document.getElementById('orbit');
-    orbit.addEventListener('mouseenter', ()=>{
-      if(hoverSpin.checked) running = true;
-    });
-    orbit.addEventListener('mouseleave', ()=>{
-      if(hoverSpin.checked) running = false;
-    });
-
-    randomBtn.addEventListener('click', ()=>{
-      const r = (Math.random()*2.5).toFixed(2);
-      speed = Number(r);
-      speedInput.value = r;
-      updateSpeedUI();
-    });
-
-    resetBtn.addEventListener('click', ()=>{
-      running = true; direction = 1; speed = 1; angle = 0; speedInput.value = 1;
-      playBtn.textContent = 'Pausar'; dirBtn.textContent = 'Dirección: sentido horario'; stateLabel.textContent = 'Reproduciendo'; pengWrap.style.transform = 'rotate(0deg)'; updateSpeedUI();
-    });
-
-    // keyboard accessibility
-    document.addEventListener('keydown', (e)=>{
-      if(e.key === ' ' || e.key === 'Spacebar'){
-        e.preventDefault();
-        running = !running; playBtn.textContent = running ? 'Pausar' : 'Reanudar'; stateLabel.textContent = running ? 'Reproduciendo' : 'En pausa';
-      }
-      if(e.key === 'ArrowUp'){ speed = Math.min(3, speed + 0.1); speedInput.value = speed.toFixed(2); updateSpeedUI(); }
-      if(e.key === 'ArrowDown'){ speed = Math.max(0, speed - 0.1); speedInput.value = speed.toFixed(2); updateSpeedUI(); }
-      if(e.key === 'd'){ direction *= -1; dirBtn.textContent = direction === 1 ? 'Dirección: sentido horario' : 'Dirección: antihorario'; }
-    });
-
-    // remember lastTime reset when switching running state to prevent jump
-    const origPlay = playBtn.onclick;
-    // nothing else needed here (managed above)
-
-  </script>
-</body>
-</html>]]></content><author><name></name></author><summary type="html"><![CDATA[Portada — Pingüino giratorio :root{ --bg:#0f1724; --card:#071029; --accent:#6ee7b7; --muted:#9aa7b2; } html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial} body{background:linear-gradient(180deg,var(--bg),#031122);color:white;display:grid;place-items:center;padding:2rem}]]></summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://10.0.22.224:4000/myblog2/feed.xml" rel="self" type="application/atom+xml" /><link href="http://10.0.22.224:4000/myblog2/" rel="alternate" type="text/html" /><updated>2025-11-25T13:27:01+01:00</updated><id>http://10.0.22.224:4000/myblog2/feed.xml</id><title type="html">Noticias del automovilismo</title><subtitle>Blog sobre noticias del mundo del automovilismo. Aquí encontrarás las últimas novedades, análisis y opiniones sobre el fascinante mundo de los coches y las carreras. Mantente al día con nuestras publicaciones regulares y sumérgete en</subtitle><entry><title type="html">WRC: Subaru domina un exigente tramo de tierra y se lleva la victoria en el Rally Forest Run 2025</title><link href="http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/25/Rally.html" rel="alternate" type="text/html" title="WRC: Subaru domina un exigente tramo de tierra y se lleva la victoria en el Rally Forest Run 2025" /><published>2025-11-25T13:01:22+01:00</published><updated>2025-11-25T13:01:22+01:00</updated><id>http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/25/Rally</id><content type="html" xml:base="http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/25/Rally.html"><![CDATA[<p><strong>Bosque de Redpine, 25 de noviembre de 2025</strong> — El equipo Subaru volvió a demostrar su fortaleza en superficies de tierra al imponerse con contundencia en el <strong>Rally Forest Run 2025</strong>, una de las pruebas más técnicas del calendario regional. El vehículo, pilotado por un dúo que destacó por su precisión y ritmo constante, logró mantener la ventaja durante todas las etapas especiales pese a la dureza del recorrido.</p>
+
+<hr />
+
+<h2 id="-dominio-absoluto-en-los-tramos-rápidos">🔥 Dominio absoluto en los tramos rápidos</h2>
+
+<p>Desde la primera etapa, el Subaru mostró un rendimiento sobresaliente en los sectores más rápidos, aprovechando su excelente tracción total y una puesta a punto que se adaptó perfectamente a la mezcla de grava y tierra compacta. Los tiempos parciales superaron por varios segundos al resto de participantes.</p>
+
+<p>Los rivales más directos reconocieron el mérito: la combinación de velocidad, estabilidad y una conducción agresiva pero controlada fue clave para marcar la diferencia.</p>
+
+<hr />
+
+<h2 id="️-estrategia-y-fiabilidad-la-receta-del-éxito">🛠️ Estrategia y fiabilidad: la receta del éxito</h2>
+
+<p>La estrategia del equipo se centró en mantener un ritmo alto sin comprometer la mecánica. El Subaru completó las etapas sin incidentes graves, mientras otros equipos sufrieron pinchazos, sobrecalentamientos o salidas de pista.</p>
+
+<p>El copiloto jugó un papel fundamental con un sistema de notas especialmente adaptado al terreno irregular del bosque, lo que permitió anticipar zonas peligrosas y maximizar la trazada.</p>
+
+<hr />
+
+<h2 id="-clasificación-general-provisional">📊 Clasificación General Provisional</h2>
+
+<ul>
+  <li>🥇 <strong>Subaru Rally Team</strong> — 1:21:34</li>
+  <li>🥈 <strong>Team Horizon Motorsport</strong> — 1:23:10</li>
+  <li>🥉 <strong>BluePeak Racing</strong> — 1:24:02</li>
+</ul>
+
+<hr />
+
+<h2 id="-un-rally-marcado-por-la-naturaleza-y-la-dificultad">🌲 Un Rally marcado por la naturaleza y la dificultad</h2>
+
+<p>El Rally Forest Run es conocido por su entorno natural, con tramos rodeados de bosques densos y cambios bruscos de adherencia. Este año no fue la excepción: polvo en suspensión, curvas ciegas y zonas estrechas pusieron a prueba la habilidad de todos los pilotos.</p>
+
+<p>Los organizadores valoraron positivamente el evento, destacando la seguridad, el ambiente y el alto nivel competitivo.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Bosque de Redpine, 25 de noviembre de 2025 — El equipo Subaru volvió a demostrar su fortaleza en superficies de tierra al imponerse con contundencia en el Rally Forest Run 2025, una de las pruebas más técnicas del calendario regional. El vehículo, pilotado por un dúo que destacó por su precisión y ritmo constante, logró mantener la ventaja durante todas las etapas especiales pese a la dureza del recorrido.]]></summary></entry><entry><title type="html">Coches: Tres leyendas del asfalto protagonizan un evento histórico: Porsche GT3 RS, Lamborghini Aventador Performante y Ferrari F40 deslumbran en Montmeló</title><link href="http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/11/Coches.html" rel="alternate" type="text/html" title="Coches: Tres leyendas del asfalto protagonizan un evento histórico: Porsche GT3 RS, Lamborghini Aventador Performante y Ferrari F40 deslumbran en Montmeló" /><published>2025-11-11T10:01:22+01:00</published><updated>2025-11-11T10:01:22+01:00</updated><id>http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/11/Coches</id><content type="html" xml:base="http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/11/Coches.html"><![CDATA[<p><strong>Montmeló, 25 de noviembre de 2025</strong> — El Circuit de Barcelona-Catalunya fue escenario este fin de semana de uno de los eventos automovilísticos más esperados del año: la exhibición “Supercar Heritage”. Tres máquinas legendarias —el <strong>Porsche 911 GT3 RS</strong>, el <strong>Lamborghini Aventador Performante</strong> y el mítico <strong>Ferrari F40</strong>— se reunieron para ofrecer a los aficionados una demostración irrepetible de potencia, historia y sonido.</p>
+
+<hr />
+
+<h2 id="porsche-911-gt3-rs-precisión-quirúrgica-alemana">Porsche 911 GT3 RS: precisión quirúrgica alemana</h2>
+
+<p>El Porsche GT3 RS fue uno de los grandes protagonistas de la jornada. Con su motor atmosférico de altas revoluciones y su aerodinámica extrema, marcó los mejores tiempos del evento en vuelta rápida.</p>
+
+<p>Los pilotos invitados destacaron:</p>
+
+<ul>
+  <li>Su dirección directa y estable.</li>
+  <li>La tracción impecable en curvas rápidas.</li>
+  <li>La sensación de control incluso al límite.</li>
+</ul>
+
+<p>El sonido del motor bóxer a más de 9.000 rpm se convirtió en uno de los momentos más disfrutados por el público.</p>
+
+<hr />
+
+<h2 id="lamborghini-aventador-performante-brutalidad-y-drama-italiano">Lamborghini Aventador Performante: brutalidad y drama italiano</h2>
+
+<p>Si el Porsche fue la precisión, el <strong>Aventador Performante</strong> representó la pura agresividad. Su V12 resonó por todo Montmeló, atrayendo a la mayor parte de los espectadores durante las aceleraciones en recta.</p>
+
+<p>Las demostraciones del Performante sorprendieron por:</p>
+
+<ul>
+  <li>Su impresionante aerodinámica activa ALA.</li>
+  <li>La brutal entrega de potencia en salida de curva.</li>
+  <li>El espectáculo visual de su diseño, que acaparó cámaras y móviles.</li>
+</ul>
+
+<p>Aunque no fue el más rápido en tiempos, sí fue el que más impacto visual generó.</p>
+
+<hr />
+
+<h2 id="ferrari-f40-una-leyenda-que-sigue-viva">Ferrari F40: una leyenda que sigue viva</h2>
+
+<p>El Ferrari F40, considerado por muchos como el mejor superdeportivo jamás construido, fue recibido con una ovación. Su presencia fue una oportunidad rara, ya que apenas quedan unidades en funcionamiento en perfecto estado.</p>
+
+<p>Los aficionados disfrutaron de:</p>
+
+<ul>
+  <li>Su turbo lag “a la vieja escuela”.</li>
+  <li>Su diseño puramente analógico.</li>
+  <li>Una conducción sin asistencias, donde todo depende del piloto.</li>
+</ul>
+
+<p>El F40 no compitió por tiempos, pero su vuelta de demostración fue el punto más emotivo del evento.</p>
+
+<p><img src="/assets/img/Ferrari-F40.png" alt="Ferrari F40" /></p>
+
+<hr />
+
+<h2 id="-un-evento-para-los-amantes-del-motor">📊 Un evento para los amantes del motor</h2>
+
+<p>Los organizadores informaron que la asistencia superó las 30.000 personas, consolidando “Supercar Heritage” como uno de los encuentros de coches deportivos más importantes del sur de Europa.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Modelo</th>
+      <th>Potencia</th>
+      <th>Comentario destacado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Porsche 911 GT3 RS</td>
+      <td>525 CV</td>
+      <td>“El rey de la vuelta rápida”</td>
+    </tr>
+    <tr>
+      <td>Lamborghini Aventador Performante</td>
+      <td>640 CV</td>
+      <td>“El espectáculo más salvaje”</td>
+    </tr>
+    <tr>
+      <td>Ferrari F40</td>
+      <td>478 CV</td>
+      <td>“La leyenda que nunca muere”</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Montmeló, 25 de noviembre de 2025 — El Circuit de Barcelona-Catalunya fue escenario este fin de semana de uno de los eventos automovilísticos más esperados del año: la exhibición “Supercar Heritage”. Tres máquinas legendarias —el Porsche 911 GT3 RS, el Lamborghini Aventador Performante y el mítico Ferrari F40— se reunieron para ofrecer a los aficionados una demostración irrepetible de potencia, historia y sonido.]]></summary></entry><entry><title type="html">Formula 1: Victoria aplastante en el Gran Premio de Silverstone 2025: un dominio absoluto desde la pole</title><link href="http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/11/Formula1.html" rel="alternate" type="text/html" title="Formula 1: Victoria aplastante en el Gran Premio de Silverstone 2025: un dominio absoluto desde la pole" /><published>2025-11-11T10:01:22+01:00</published><updated>2025-11-11T10:01:22+01:00</updated><id>http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/11/Formula1</id><content type="html" xml:base="http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/11/Formula1.html"><![CDATA[<p><strong>Silverstone, 6 de julio de 2025</strong> — En un día de condiciones variables y gran intensidad, el piloto británico Lando Norris logró una victoria muy celebrada en el Gran Premio de Gran Bretaña, tras una gran actuación en su carrera de casa. Finalizó por delante de su compañero de equipo, Oscar Piastri, y del veterano Nico Hülkenberg, quien logró por fin su primer podio en la Fórmula 1.</p>
+
+<hr />
+
+<h2 id="️-carrera-dominada-por-el-ritmo-y-la-gestión-de-la-tormenta">🏎️ Carrera dominada por el ritmo y la gestión de la tormenta</h2>
+
+<p>El piloto de McLaren F1 Team impuso un ritmo impresionante desde el inicio. Aunque Piastri lideró gran parte de la prueba, el triunfo se le escapó por una penalización que cambió el curso del resultado. Norris asumió el mando y supo mantenerlo pese a los desafíos del circuito mojado y los constantes periodos de coche de seguridad.</p>
+
+<hr />
+
+<h2 id="-penalización-clave-y-podio-histórico">🔧 Penalización clave y podio histórico</h2>
+
+<p>Oscar Piastri había liderado la prueba antes de recibir una penalización de <strong>10 segundos</strong> por frenar de manera irregular tras la salida del coche de seguridad, lo que permitió a Norris ascender al primer puesto.
+Mientras tanto, Hülkenberg remontó desde la 19ª posición en parrilla para subir al tercer escalón del podio, logrando así su primera vez entre los tres mejores en 239 GP’s.</p>
+
+<hr />
+
+<h2 id="-clasificación-final">📊 Clasificación Final</h2>
+
+<p><strong>Fecha:</strong> 6 de julio de 2025 — Silverstone Circuit</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pos</th>
+      <th>Piloto</th>
+      <th>Equipo</th>
+      <th>Diferencia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1º</td>
+      <td>Lando Norris</td>
+      <td>McLaren-Mercedes</td>
+      <td>1:37:15.735</td>
+    </tr>
+    <tr>
+      <td>2º</td>
+      <td>Oscar Piastri</td>
+      <td>McLaren-Mercedes</td>
+      <td>+ 6.812 s</td>
+    </tr>
+    <tr>
+      <td>3º</td>
+      <td>Nico Hülkenberg</td>
+      <td>Kick Sauber-Ferrari</td>
+      <td>+ 34.742 s</td>
+    </tr>
+    <tr>
+      <td>4º</td>
+      <td>Lewis Hamilton</td>
+      <td>Ferrari</td>
+      <td>+ 39.812 s</td>
+    </tr>
+    <tr>
+      <td>5º</td>
+      <td>Max Verstappen</td>
+      <td>Red Bull-RBPT</td>
+      <td>+ 56.781 s</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="️-el-clima-vuelve-a-jugar-su-papel">🌦️ El clima vuelve a jugar su papel</h2>
+
+<p>La carrera estuvo marcada por lluvia intermitente, paradas bajo condiciones cambiantes y varios periodos con coche de seguridad, factores que pusieron a prueba la estrategia y reflejaron la gran capacidad de Norris para adaptarse.</p>
+
+<hr />]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Silverstone, 6 de julio de 2025 — En un día de condiciones variables y gran intensidad, el piloto británico Lando Norris logró una victoria muy celebrada en el Gran Premio de Gran Bretaña, tras una gran actuación en su carrera de casa. Finalizó por delante de su compañero de equipo, Oscar Piastri, y del veterano Nico Hülkenberg, quien logró por fin su primer podio en la Fórmula 1.]]></summary></entry></feed>
