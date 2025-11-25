@@ -5,8 +5,8 @@
 layout: home
 ---
 
-# 🏎️ Pasión por el Automovilismo
+#  Pasión por el Automovilismo
 
 ![Portada de Rally](/assets/img/2024-subaru-wrx-rally-car.jpg)
 
-Bienvenido a nuestra página dedicada al mundo del motor, la competición y la adrenalina del rally.
+Bienvenido a nuestra página dedicada al mundo del motor, la competición y la adrenalina.
