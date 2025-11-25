@@ -18,24 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Que increible TITULO
+title: Noticias del automovilismo
 email: ssaezn01@educantabria.es
 description: >- # this means to ignore newlines until "baseurl:"
-  Una descripcion realmente asombrosa.
-  Mas descripcion en la segunda linea.
-  Y aun mas descripcion en la tercera linea.
-  Y asi hasta el infinito y mas alla.
-  Ya no se que mas poner.
-  Creo que con esto es suficiente.
-  Espero que te guste mi sitio web.
-  Disfrutalo mucho.
-  Gracias por visitarlo.
-  Vuelve pronto.
-  Adios.
-  :)
-baseurl: "/myblog2" # the subpath of your site, e.g. /blog
-url: "https://kamplen3.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: elonmusk
+  Blog sobre noticias del mundo del automovilismo.
+  Aquí encontrarás las últimas novedades, análisis y opiniones sobre
+  el fascinante mundo de los coches y las carreras.
+  Mantente al día con nuestras publicaciones regulares y sumérgete en
+#baseurl: "/myblog2" # the subpath of your site, e.g. /blog
+#url: "https://kamplen3.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: kamplen3
 github_username:  kamplen3
 
 # Build settings
