@@ -19,6 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Noticias del automovilismo
+author: Samuel Sáez Noval
 email: ssaezn01@educantabria.es
 description: >- # this means to ignore newlines until "baseurl:"
   Blog sobre noticias del mundo del automovilismo.
