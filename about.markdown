@@ -1,32 +1,59 @@
 ---
 layout: page
-title: About
+title: Acerca de
 permalink: /about/
 ---
 
-# 🌟 Mis Gustos y Aficiones
+# 🏎️ Acerca de Nosotros
 
-## 🎶 Música
-Me encanta descubrir nuevos géneros, aunque suelo escuchar principalmente **rock alternativo**, **synthwave** y algo de **jazz suave** cuando quiero concentrarme.
-
-## 🎮 Videojuegos
-Soy fan de los juegos con buena historia y exploración.  
-Algunos de mis favoritos:
-- *The Legend of Zelda: Breath of the Wild*  
-- *Hollow Knight*  
-- *Stardew Valley*
-
-## 📚 Lectura
-Disfruto de la **ciencia ficción** y la **fantasía**. Mis autores de referencia son *Isaac Asimov* y *Brandon Sanderson*.
-
-## 🏞️ Aire libre
-Nada como una caminata por la montaña o una tarde en la playa para desconectar del mundo digital.
-
-## ☕ Otros pequeños placeres
-- Tomar café por la mañana mientras leo o dibujo.  
-- Escuchar lluvia de fondo mientras programo.  
-- Hacer fotos de paisajes o atardeceres.
+Bienvenido a nuestra sección dedicada al **mundo del automovilismo**, un espacio creado para apasionados de la velocidad, la ingeniería y la competición. Nuestro objetivo es ofrecer información clara, actualizada y entretenida sobre todo lo que rodea a este fascinante deporte.
 
 ---
 
-> ✨ *Creo que la vida se disfruta más cuando mezclas creatividad, naturaleza y curiosidad.*
+## 🚦 ¿Quiénes Somos?
+
+Somos un grupo de entusiastas del motor con años de experiencia siguiendo campeonatos, analizando tecnología automotriz y participando activamente en eventos y comunidades del sector. Creemos que el automovilismo es más que carreras: es innovación, estrategia, emoción y cultura.
+
+---
+
+## 🧩 Nuestra Misión
+
+- Difundir conocimientos sobre competiciones como **Fórmula 1, WEC, MotoGP, Rally**, y más.  
+- Explicar la **tecnología** detrás de los vehículos: aerodinámica, motores, telemetría y seguridad.  
+- Acercar al público las últimas **novedades**, análisis y tendencias del motorsport.  
+- Fomentar una comunidad respetuosa y apasionada por las cuatro ruedas.
+
+---
+
+## 🔧 Qué Encontrarás Aquí
+
+- **Artículos técnicos** sobre coches y motos de competición.  
+- **Resumenes y análisis** de carreras.  
+- **Guías para principiantes** sobre categorías del automovilismo.  
+- **Historia del automovilismo**: pilotos, escuderías y momentos icónicos.  
+- **Comparativas y curiosidades** del mundo del motor.
+
+---
+
+## 🏁 Nuestra Filosofía
+
+El automovilismo es un deporte que une emoción y precisión. Valoramos:
+
+- La **innovación** tecnológica constante.  
+- El **trabajo en equipo** detrás de cada piloto.  
+- El **respeto y la seguridad** en pista.  
+- La **pasión** que hace vibrar a millones de fans en todo el planeta.
+
+---
+
+## 📬 Contacto
+
+Si quieres colaborar, sugerir contenido o simplemente hablar de motores, ¡estamos encantados de escucharte!
+
+📧 **contacto@automovilismo.com**
+
+---
+
+**Gracias por formar parte de esta comunidad. ¡Arrancamos y no frenamos!**
+
+🏎️💨
