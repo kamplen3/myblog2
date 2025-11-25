@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Coches: Tres leyendas del asfalto protagonizan un evento histórico: Porsche GT3 RS, Lamborghini Aventador Performante y Ferrari F40 deslumbran en Montmeló"
-date:   2025-11-11 10:01:22 +0100
+date:   2025-11-25 13:37:32 +0100
 categories: jekyll update
 ---
 
