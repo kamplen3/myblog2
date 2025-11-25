@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://10.0.22.224:4000/myblog2/feed.xml" rel="self" type="application/atom+xml" /><link href="http://10.0.22.224:4000/myblog2/" rel="alternate" type="text/html" /><updated>2025-11-25T13:56:49+01:00</updated><id>http://10.0.22.224:4000/myblog2/feed.xml</id><title type="html">Noticias del automovilismo</title><subtitle>Blog sobre noticias del mundo del automovilismo. Aquí encontrarás las últimas novedades, análisis y opiniones sobre el fascinante mundo de los coches y las carreras. Mantente al día con nuestras publicaciones regulares y sumérgete en</subtitle><entry><title type="html">Coches: Tres leyendas del asfalto protagonizan un evento histórico: Porsche GT3 RS, Lamborghini Aventador Performante y Ferrari F40 deslumbran en Montmeló</title><link href="http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/25/Coches.html" rel="alternate" type="text/html" title="Coches: Tres leyendas del asfalto protagonizan un evento histórico: Porsche GT3 RS, Lamborghini Aventador Performante y Ferrari F40 deslumbran en Montmeló" /><published>2025-11-25T13:37:32+01:00</published><updated>2025-11-25T13:37:32+01:00</updated><id>http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/25/Coches</id><content type="html" xml:base="http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/25/Coches.html"><![CDATA[<p><strong>Montmeló, 25 de noviembre de 2025</strong> — El Circuit de Barcelona-Catalunya fue escenario este fin de semana de uno de los eventos automovilísticos más esperados del año: la exhibición “Supercar Heritage”. Tres máquinas legendarias —el <strong>Porsche 911 GT3 RS</strong>, el <strong>Lamborghini Aventador Performante</strong> y el mítico <strong>Ferrari F40</strong>— se reunieron para ofrecer a los aficionados una demostración irrepetible de potencia, historia y sonido.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://10.0.22.224:4000/myblog2/feed.xml" rel="self" type="application/atom+xml" /><link href="http://10.0.22.224:4000/myblog2/" rel="alternate" type="text/html" /><updated>2025-11-25T13:59:18+01:00</updated><id>http://10.0.22.224:4000/myblog2/feed.xml</id><title type="html">Noticias del automovilismo</title><subtitle>Blog sobre noticias del mundo del automovilismo. Aquí encontrarás las últimas novedades, análisis y opiniones sobre el fascinante mundo de los coches y las carreras. Mantente al día con nuestras publicaciones regulares y sumérgete en</subtitle><entry><title type="html">Coches: Tres leyendas del asfalto protagonizan un evento histórico: Porsche GT3 RS, Lamborghini Aventador Performante y Ferrari F40 deslumbran en Montmeló</title><link href="http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/25/Coches.html" rel="alternate" type="text/html" title="Coches: Tres leyendas del asfalto protagonizan un evento histórico: Porsche GT3 RS, Lamborghini Aventador Performante y Ferrari F40 deslumbran en Montmeló" /><published>2025-11-25T13:37:32+01:00</published><updated>2025-11-25T13:37:32+01:00</updated><id>http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/25/Coches</id><content type="html" xml:base="http://10.0.22.224:4000/myblog2/jekyll/update/2025/11/25/Coches.html"><![CDATA[<p><strong>Montmeló, 25 de noviembre de 2025</strong> — El Circuit de Barcelona-Catalunya fue escenario este fin de semana de uno de los eventos automovilísticos más esperados del año: la exhibición “Supercar Heritage”. Tres máquinas legendarias —el <strong>Porsche 911 GT3 RS</strong>, el <strong>Lamborghini Aventador Performante</strong> y el mítico <strong>Ferrari F40</strong>— se reunieron para ofrecer a los aficionados una demostración irrepetible de potencia, historia y sonido.</p>
 
 <hr />
 
@@ -16,7 +16,7 @@
 
 <p>El sonido del motor bóxer a más de 9.000 rpm se convirtió en uno de los momentos más disfrutados por el público.</p>
 
-<p><img src="/assets/img/porsche-911-gt3-rs.png" alt="Ferrari F40" /></p>
+<p><img src="../assets/img/porsche-911-gt3-rs.png" alt="Ferrari F40" /></p>
 
 <hr />
 
@@ -34,7 +34,7 @@
 
 <p>Aunque no fue el más rápido en tiempos, sí fue el que más impacto visual generó.</p>
 
-<p><img src="/assets/img/Lamborghini-aventador.png" alt="Lamborghini Aventador" /></p>
+<p><img src="../assets/img/Lamborghini-aventador.png" alt="Lamborghini Aventador" /></p>
 
 <hr />
 
@@ -52,7 +52,7 @@
 
 <p>El F40 no compitió por tiempos, pero su vuelta de demostración fue el punto más emotivo del evento.</p>
 
-<p><img src="/assets/img/Ferrari-F40.png" alt="Ferrari F40" /></p>
+<p><img src="../assets/img/Ferrari-F40.png" alt="Ferrari F40" /></p>
 
 <hr />
 
